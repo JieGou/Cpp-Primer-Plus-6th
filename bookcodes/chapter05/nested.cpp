@@ -5,7 +5,7 @@ const int Years = 4;
 int main()
 {
     using namespace std;
-    const char * cities[Cities] =   // array of pointers
+    const char* cities[Cities] =   // array of pointers
     {                               // to 5 strings
         "Gribble City",
         "Gribbletown",
@@ -30,6 +30,6 @@ int main()
             cout << maxtemps[year][city] << "\t";
         cout << endl;
     }
-	// cin.get();
+    // cin.get();
     return 0;
 }

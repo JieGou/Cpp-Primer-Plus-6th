@@ -4,7 +4,8 @@ int main()
 {
 	using std::cout;    // a using declaration
     using std::cin;
-    using std::endl;;
+    using std::endl;
+
     cout << "Enter an integer: ";
     int by;
     cin >> by;

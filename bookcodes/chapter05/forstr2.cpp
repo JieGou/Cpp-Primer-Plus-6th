@@ -20,5 +20,5 @@ int main()
     cout << word << "\nDone\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    return 0;
 }

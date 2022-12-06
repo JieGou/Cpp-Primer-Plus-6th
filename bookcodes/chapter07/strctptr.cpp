@@ -15,8 +15,8 @@ struct rect
 };
 
 // prototypes
-void rect_to_polar(const rect * pxy, polar * pda);
-void show_polar (const polar * pda);
+void rect_to_polar(const rect* pxy, polar* pda);
+void show_polar(const polar* pda);
 
 int main()
 {
@@ -29,6 +29,7 @@ int main()
     {
         rect_to_polar(&rplace, &pplace);    // pass addresses
         show_polar(&pplace);        // pass address
+        //TODO 实际任何不是double的输入 程序都会结束 可以更加完善
         cout << "Next two numbers (q to quit): ";
     }
     cout << "Done.\n";
@@ -36,7 +37,7 @@ int main()
 }
 
 // show polar coordinates, converting angle to degrees
-void show_polar (const polar * pda)
+void show_polar(const polar* pda)
 {
     using namespace std;
     const double Rad_to_deg = 57.29577951;
@@ -47,10 +48,10 @@ void show_polar (const polar * pda)
 }
 
 // convert rectangular to polar coordinates
-void rect_to_polar(const rect * pxy, polar * pda)
+void rect_to_polar(const rect* pxy, polar* pda)
 {
     using namespace std;
     pda->distance =
         sqrt(pxy->x * pxy->x + pxy->y * pxy->y);
-    pda->angle = atan2(pxy->y, pxy->x); 
+    pda->angle = atan2(pxy->y, pxy->x);
 }

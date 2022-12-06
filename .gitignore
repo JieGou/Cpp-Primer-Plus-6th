@@ -6,3 +6,6 @@ a.out
 
 .idea/
 .vscode/
+/.vs
+out
+/Folder.DotSettings.user

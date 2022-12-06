@@ -3,10 +3,10 @@
 #include <array>
 #include <string>
 const int Seasons = 4;
-const std::array<std::string, Seasons> Snames =
-    {"Spring", "Summer", "Fall", "Winter"};
+const std::array<std::string, Seasons> SeasonsNames =
+{ "Spring", "Summer", "Fall", "Winter" };
 
-void fill(std::array<double, Seasons> * pa);
+void fill(std::array<double, Seasons>* pa);
 void show(std::array<double, Seasons> da);
 int main()
 {
@@ -18,12 +18,13 @@ int main()
     return 0;
 }
 
-void fill(std::array<double, Seasons> * pa)
+void fill(std::array<double, Seasons>* pa)
 {
     for (int i = 0; i < Seasons; i++)
     {
-        std::cout << "Enter " << Snames[i] << " expenses: ";
-        std::cin >> (*pa)[i];
+        std::cout << "Enter " << SeasonsNames[i] << " expenses: ";
+        //std::cin >> (*pa)[i];
+        std::cin>> pa->at(i);
     }
 }
 
@@ -33,7 +34,7 @@ void show(std::array<double, Seasons> da)
     std::cout << "\nEXPENSES\n";
     for (int i = 0; i < Seasons; i++)
     {
-        std::cout << Snames[i] << ": $" << da[i] << '\n';
+        std::cout << SeasonsNames[i] << ": $" << da[i] << '\n';
         total += da[i];
     }
     std::cout << "Total: $" << total << '\n';

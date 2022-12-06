@@ -3,7 +3,8 @@
 int main()
 {
     using std::cin;     // using declarations
-	using std::cout;
+    using std::cout;
+
     char ch;
     int spaces = 0;
     int total = 0;

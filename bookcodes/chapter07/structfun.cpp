@@ -22,12 +22,11 @@ int main()
 {
     using namespace std;
     rect rplace;
-    polar pplace;
 
     cout << "Enter the x and y values: ";
     while (cin >> rplace.x >> rplace.y)  // slick use of cin
     {
-        pplace = rect_to_polar(rplace);
+        polar pplace = rect_to_polar(rplace);
         show_polar(pplace);
         cout << "Next two numbers (q to quit): ";
     }
@@ -42,13 +41,13 @@ polar rect_to_polar(rect xypos)
     polar answer;
 
     answer.distance =
-        sqrt( xypos.x * xypos.x + xypos.y * xypos.y);
+        sqrt(xypos.x * xypos.x + xypos.y * xypos.y);
     answer.angle = atan2(xypos.y, xypos.x);
     return answer;      // returns a polar structure
 }
 
 // show polar coordinates, converting angle to degrees
-void show_polar (polar dapos)
+void show_polar(polar dapos)
 {
     using namespace std;
     const double Rad_to_deg = 57.29577951;
