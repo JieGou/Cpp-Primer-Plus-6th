@@ -20,5 +20,5 @@ int main()
     cout << "The Amazing Accounto bids you adieu!\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    return 0;
 }

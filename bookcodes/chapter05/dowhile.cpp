@@ -11,8 +11,8 @@ int main()
     {
         cin >> n;       // execute body
     } while (n != 7);   // then test
-    cout << "Yes, 7 is my favorite.\n" ;
+    cout << "Yes, 7 is my favorite.\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    return 0;
 }

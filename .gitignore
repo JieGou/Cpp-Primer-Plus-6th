@@ -8,3 +8,5 @@ a.out
 .vscode/
 /.vs
 /practice/.vs
+out
+/Folder.DotSettings.user

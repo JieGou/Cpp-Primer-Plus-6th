@@ -9,7 +9,7 @@ int main() {                                 // function header
     cout << "Hello world!" << endl;           // message
 
     cout << "Comme up and C++ me some time."
-         << endl;
+        << endl;
     cout << "You won't regret it! " << endl;
 
     // If the output window closes before you can read it,

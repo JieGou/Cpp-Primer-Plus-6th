@@ -23,7 +23,7 @@ int main()
             cin.clear();
             while (cin.get() != '\n')
                 continue;
-           cout << "Bad input; Please enter a number: ";
+            cout << "Bad input; Please enter a number: ";
         }
         revalue(factor, properties, size);
         show_array(properties, size);
@@ -48,8 +48,8 @@ int fill_array(double ar[], int limit)
             cin.clear();
             while (cin.get() != '\n')
                 continue;
-           cout << "Bad input; input process terminated.\n";
-           break;
+            cout << "Bad input; input process terminated.\n";
+            break;
         }
         else if (temp < 0)     // signal to terminate
             break;

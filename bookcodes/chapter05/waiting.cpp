@@ -10,10 +10,10 @@ int main()
     clock_t delay = secs * CLOCKS_PER_SEC;  // convert to clock ticks
     cout << "starting\a\n";
     clock_t start = clock();
-    while (clock() - start < delay )        // wait until time elapses
+    while (clock() - start < delay)        // wait until time elapses
         ;                                   // note the semicolon
     cout << "done \a\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    return 0;
 }

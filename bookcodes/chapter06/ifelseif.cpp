@@ -1,6 +1,6 @@
 // ifelseif.cpp -- using if else if else
 #include <iostream>
-const int Fave = 27;
+const int Favorite = 27;
 int main()
 {
     using namespace std;
@@ -11,13 +11,13 @@ int main()
     do
     {
         cin >> n;
-        if (n < Fave)
+        if (n < Favorite)
             cout << "Too low -- guess again: ";
-        else if (n > Fave)
+        else if (n > Favorite)
             cout << "Too high -- guess again: ";
         else
-            cout << Fave << " is right!\n";
-    } while (n != Fave);
+            cout << Favorite << " is right!\n";
+    } while (n != Favorite);
     // cin.get();
     // cin.get();
     return 0;

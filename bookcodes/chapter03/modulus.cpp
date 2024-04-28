@@ -3,7 +3,12 @@
 int main()
 {
     using namespace std;
+    /// <summary>
+    /// pounds Of one Stone
+    /// </summary>
+    /// <returns>14</returns>
     const int Lbs_per_stn = 14;
+
     int lbs;
 
     cout << "Enter your weight in pounds: ";

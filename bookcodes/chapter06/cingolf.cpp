@@ -4,14 +4,16 @@ const int Max = 5;
 int main()
 {
     using namespace std;
-// get data
+    // get data
     int golf[Max];
     cout << "Please enter your golf scores.\n";
     cout << "You must enter " << Max << " rounds.\n";
     int i;
     for (i = 0; i < Max; i++)
     {
-        cout << "round #" << i+1 << ": ";
+        cout << "round #" << i + 1 << ": ";
+
+        //Note 处理错误输入的关键代码
         while (!(cin >> golf[i])) {
             cin.clear();     // reset input
             while (cin.get() != '\n')
@@ -19,14 +21,14 @@ int main()
             cout << "Please enter a number: ";
         }
     }
-// calculate average
+    // calculate average
     double total = 0.0;
     for (i = 0; i < Max; i++)
         total += golf[i];
-// report results
+    // report results
     cout << total / Max << " = average score "
-            << Max << " rounds\n";
+        << Max << " rounds\n";
     // cin.get();
     // cin.get();
-    return 0; 
+    return 0;
 }

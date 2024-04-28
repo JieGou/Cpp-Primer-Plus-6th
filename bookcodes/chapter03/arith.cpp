@@ -3,8 +3,8 @@
 int main()
 {
     using namespace std;
-    float hats, heads;
-    //double hats, heads;
+    //float hats, heads;
+    double hats, heads;
 
     cout.setf(ios_base::fixed, ios_base::floatfield); // fixed-point
     cout << "Enter a number: ";

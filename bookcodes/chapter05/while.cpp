@@ -4,7 +4,8 @@ const int ArSize = 20;
 int main()
 {
     using namespace std;
-    char name[ArSize];
+    //char name[ArSize];
+    string name;
 
     cout << "Your first name, please: ";
     cin >> name;

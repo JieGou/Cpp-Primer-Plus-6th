@@ -15,10 +15,10 @@ int main()
         0.20,
         12.49
     };
-    inflatable choice;
     cout << "bouquet: " << bouquet.name << " for $";
     cout << bouquet.price << endl;
 
+    inflatable choice;
     choice = bouquet;  // assign one structure to another
     cout << "choice: " << choice.name << " for $";
     cout << choice.price << endl;

@@ -10,6 +10,7 @@ int main()
     ifstream inFile;        // object for handling file input
 
     cout << "Enter name of data file: ";
+    //Note 注意在文件文件后按回车键增加一个空行
     cin.getline(filename, SIZE);
     inFile.open(filename);  // associate inFile with a file
     if (!inFile.is_open())  // failed to open file
